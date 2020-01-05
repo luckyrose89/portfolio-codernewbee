@@ -19,4 +19,13 @@
   font-weight: 300;
   line-height: 1.2;
   color: #1f1f1f;
+  text-transform: capitalize;
+  letter-spacing: -0.5;
+}
+
+.showcase-header p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0;
 }
