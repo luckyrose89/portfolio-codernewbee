@@ -2,5 +2,21 @@
   padding-top: 5.5rem;
 }
 
+.showcase-wrapper {
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .showcase-header {
+  width: 100%;
+  padding: 0 0.9rem;
+}
+
+.showcase-header h1 {
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #1f1f1f;
 }

@@ -42,7 +42,7 @@ body {
 }
 
 .main-nav {
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .main-nav__items {
@@ -56,6 +56,12 @@ body {
   margin: 0 0.5rem;
   font-size: 1rem;
   font-weight: 600;
+}
+
+.main-nav__item:hover,
+.mobile-nav__item a:hover {
+  border-top: 2px solid #bdb099;
+  border-bottom: 2px solid #bdb099;
 }
 
 .social {
@@ -87,6 +93,10 @@ body {
   font-size: 1.4rem;
 }
 
+.main-nav__toggle:hover {
+  background: #ddd;
+}
+
 .mobile-nav {
   display: none;
   border-bottom: 1px solid #efefef;
@@ -103,8 +113,15 @@ body {
 .mobile-nav__item {
   font-weight: 600;
   line-height: 20px;
-  margin-bottom: 1rem;
   padding: 0.5rem 1rem;
+}
+
+.mobile-nav__item a {
+  padding: 0.5rem;
+}
+
+.active {
+  display: block;
 }
 /* Media Queries*/
 
