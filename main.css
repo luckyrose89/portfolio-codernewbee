@@ -9,7 +9,8 @@
   margin-left: auto;
 }
 
-.showcase-header {
+.showcase-header,
+.showcase-filter {
   width: 100%;
   padding: 0 0.9rem;
 }
@@ -28,4 +29,23 @@
   font-weight: 400;
   font-style: italic;
   letter-spacing: 0;
+  margin: 0;
+}
+
+.showcase-filter {
+  margin-top: 5.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.showcase-filter__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.showcase-filter__item {
+  margin-right: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
