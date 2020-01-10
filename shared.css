@@ -121,6 +121,28 @@ body {
 .active {
   display: block;
 }
+
+footer {
+  padding: 5.5rem 0;
+  background-color: #222222;
+}
+
+.footer-widgets {
+  display: flex;
+  justify-content: space-between;
+}
+
+.widget {
+  padding: 0 0.9rem;
+  color: #fff;
+}
+
+.widget-title h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 /* Media Queries*/
 
 @media (max-width: 740px) {
