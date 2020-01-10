@@ -1,5 +1,7 @@
 .showcase {
   padding-top: 5.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .showcase-wrapper {
@@ -7,6 +9,10 @@
   padding-right: 0.9rem;
   margin-right: auto;
   margin-left: auto;
+}
+
+.showcase-header {
+  max-width: 700px;
 }
 
 .showcase-header,
@@ -57,6 +63,7 @@
   display: grid;
   grid-gap: 1.25rem;
   grid-template-columns: repeat(auto-fill, minmax(323px, 3fr));
+  padding: 0.9rem;
 }
 
 .gallery-img {
@@ -70,6 +77,14 @@
   color: #ffffff;
 }
 
+.showcase-column {
+  display: none;
+}
+
+.showcase-show {
+  display: block;
+}
+
 @media (max-width: 40rem) {
   .showcase-filter__items {
     justify-content: center;
@@ -78,5 +93,8 @@
   .showcase-filter__item {
     font-size: 14px;
     flex-basis: 15%;
+  }
+  .showcase-gallery {
+    padding: 0;
   }
 }
