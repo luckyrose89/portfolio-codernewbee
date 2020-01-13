@@ -52,6 +52,7 @@ body {
 
 .main-nav__item {
   margin: 0 0.5rem;
+  padding: 0 0.5rem;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -75,6 +76,11 @@ body {
 
 .social.firstlink {
   margin-left: 30px;
+}
+.social:hover {
+  border: none;
+  background: #bdb099;
+  color: #ffffff;
 }
 
 .main-nav__toggle {

@@ -1,18 +1,19 @@
 const toggleButton = document.querySelector(".main-nav__toggle");
 const mobileNav = document.querySelector(".mobile-nav");
 
-toggleButton.addEventListener("click", function(event) {
-  mobileNav.classList.toggle("active");
-});
-
 // convert showcase filter buttons and columns to iterable array
-var showcaseMenuBtn = Array.prototype.slice.call(
+const showcaseMenuBtn = Array.prototype.slice.call(
   document.querySelectorAll(".showcase-filter__item")
 );
 
-var showcaseColumn = Array.prototype.slice.call(
+const showcaseColumn = Array.prototype.slice.call(
   document.querySelectorAll(".showcase-column")
 );
+
+// display mobile nav
+toggleButton.addEventListener("click", function(event) {
+  mobileNav.classList.toggle("active");
+});
 
 function filterSelection(name) {
   if (name === "all") {
