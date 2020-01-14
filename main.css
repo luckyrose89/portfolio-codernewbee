@@ -61,6 +61,10 @@
   padding: 0.2rem 0.8rem;
 }
 
+.showcase-filter__item:hover {
+  cursor: pointer;
+}
+
 .showcase-gallery {
   display: grid;
   grid-gap: 1.25rem;
