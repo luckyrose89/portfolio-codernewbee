@@ -61,6 +61,7 @@ body {
 .mobile-nav__item a:hover {
   border-top: 2px solid #bdb099;
   border-bottom: 2px solid #bdb099;
+  cursor: pointer;
 }
 
 .social {

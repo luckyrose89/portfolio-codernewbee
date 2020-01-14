@@ -1,10 +1,12 @@
-.showcase {
+.showcase,
+.cta {
   padding-top: 5.5rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.showcase-wrapper {
+.showcase-wrapper,
+.cta {
   padding-left: 0.9rem;
   padding-right: 0.9rem;
   margin-right: auto;
@@ -83,6 +85,44 @@
 
 .showcase-show {
   display: block;
+}
+
+.cta__message {
+  text-align: center;
+}
+
+.cta__message h2 {
+  font-size: 1.9rem;
+  font-weight: 300;
+  margin: 0 0 1.8rem;
+  padding: 0;
+  color: #1f1f1f;
+}
+
+.cta__button {
+  background: #1f1f1f;
+  border: none;
+  color: #ffffff;
+  padding: 0.6rem 1.8rem;
+  font-size: 1rem;
+}
+
+.cta__button:hover {
+  background: #bdb099;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+@media (max-width: 30rem) {
+  .showcase-header h1,
+  .cta__message h2 {
+    font-size: 1.6rem;
+  }
+
+  .showcase-header p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 40rem) {
