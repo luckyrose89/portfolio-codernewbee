@@ -17,13 +17,18 @@ body {
   line-height: 1.80857;
 }
 
+.mobile-nav,
+.footer-widgets,
+.main-header {
+  margin: 0 auto;
+}
+
 #wrapper {
   background: #fff;
 }
 
 .main-header {
   width: 95%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.25rem;
@@ -78,6 +83,7 @@ body {
 .social.firstlink {
   margin-left: 30px;
 }
+
 .social:hover {
   border: none;
   background: #bdb099;
@@ -106,7 +112,6 @@ body {
   display: none;
   border-bottom: 1px solid #efefef;
   width: 95%;
-  margin: 0 auto;
 }
 
 .mobile-nav__items {
@@ -137,12 +142,16 @@ footer {
 
 .footer-widgets {
   display: flex;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  max-width: 1200px;
   justify-content: space-between;
 }
 
 .widget {
   padding: 0 0.9rem;
   color: #fff;
+  width: 50%;
 }
 
 .widget-title h3 {

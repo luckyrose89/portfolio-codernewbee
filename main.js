@@ -3,18 +3,6 @@ const mobileNav = document.querySelector(".mobile-nav");
 const headerTagline = document.querySelector(".showcase-header__tagline");
 const features = ["fullstack developer", "blogger", "coding enthusiast"];
 
-var index = 0;
-
-// change feature in header tagline
-function showFeature() {
-  headerTagline.innerHTML = features[index];
-  if (index < features.length - 1) {
-    index++;
-  } else {
-    index = 0;
-  }
-}
-
 // convert showcase filter buttons and columns to iterable array
 const showcaseMenuBtn = Array.prototype.slice.call(
   document.querySelectorAll(".showcase-filter__item")
@@ -24,6 +12,17 @@ const showcaseColumn = Array.prototype.slice.call(
   document.querySelectorAll(".showcase-column")
 );
 
+// change feature in header tagline
+var index = 0;
+
+function showFeature() {
+  headerTagline.innerHTML = features[index];
+  if (index < features.length - 1) {
+    index++;
+  } else {
+    index = 0;
+  }
+}
 // display mobile nav
 toggleButton.addEventListener("click", function(event) {
   mobileNav.classList.toggle("active");
