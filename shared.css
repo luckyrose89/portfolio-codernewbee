@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700,900&display=swap");
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
@@ -11,9 +12,8 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   background: #f3f3f3;
   color: #686b70;
-  padding: 30px;
-  margin: 0;
   height: 100%;
+  padding: 30px;
   line-height: 1.80857;
 }
 
@@ -136,6 +136,7 @@ body {
 
 footer {
   margin-top: 5.5rem;
+  margin-bottom: -0.1rem;
   padding: 5.5rem 0;
   background-color: #222222;
 }
@@ -160,6 +161,11 @@ footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.copyrights {
+  background: #1d1d1d;
+  padding: 3rem 0;
+}
+
 /* Media Queries*/
 
 @media (max-width: 740px) {
@@ -175,6 +181,16 @@ footer {
 @media (max-width: 800px) {
   .social {
     display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .footer-widgets {
+    display: block;
+  }
+
+  .widget {
+    width: 100%;
   }
 }
 
