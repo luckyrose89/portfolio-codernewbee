@@ -78,6 +78,19 @@
   object-fit: cover;
 }
 
+.showcase-overlay {
+  background: #1f1f1f;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
 .active-link {
   background: #1f1f1f;
   color: #ffffff;
@@ -85,6 +98,11 @@
 
 .showcase-column {
   display: none;
+  position: relative;
+}
+
+.showcase-column:hover .showcase-overlay {
+  opacity: 1;
 }
 
 .showcase-show {
