@@ -12,7 +12,6 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   background: #f3f3f3;
   color: #686b70;
-  height: 100%;
   padding: 30px;
   line-height: 1.80857;
 }
@@ -48,7 +47,8 @@ body {
   margin-top: 1.5rem;
 }
 
-.main-nav__items {
+.main-nav__items,
+.footer-nav__items {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -164,6 +164,19 @@ footer {
 .copyrights {
   background: #1d1d1d;
   padding: 3rem 0;
+}
+
+.copyrights-wrapper {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav__item {
+  margin: 0 0.3rem;
 }
 
 /* Media Queries*/
