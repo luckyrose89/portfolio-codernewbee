@@ -16,13 +16,18 @@ body {
   line-height: 1.80857;
 }
 
+a {
+  color: #686b70;
+  text-decoration: none;
+}
+
 .mobile-nav,
 .footer-widgets,
 .main-header {
   margin: 0 auto;
 }
 
-#wrapper {
+.wrapper {
   background: #fff;
 }
 
