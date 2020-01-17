@@ -179,6 +179,18 @@ footer {
   margin: 0 0.3rem;
 }
 
+.scroll-top {
+  padding: 0 0.9rem;
+  color: #fff;
+  background: #686b70;
+  border-radius: 50%;
+}
+
+.scroll-top:hover {
+  background: #777;
+  cursor: pointer;
+}
+
 /* Media Queries*/
 
 @media (max-width: 740px) {
@@ -187,6 +199,10 @@ footer {
   }
 
   .main-nav__toggle {
+    display: block;
+  }
+
+  .copyrights-wrapper {
     display: block;
   }
 }
