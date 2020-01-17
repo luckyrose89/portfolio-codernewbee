@@ -21,6 +21,13 @@ a {
   text-decoration: none;
 }
 
+.container {
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .mobile-nav,
 .footer-widgets,
 .main-header {

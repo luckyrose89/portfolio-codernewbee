@@ -5,14 +5,6 @@
   margin: 0 auto;
 }
 
-.showcase-wrapper,
-.cta {
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .showcase-header {
   max-width: 700px;
 }
