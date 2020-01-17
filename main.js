@@ -2,6 +2,7 @@ const toggleButton = document.querySelector(".main-nav__toggle");
 const mobileNav = document.querySelector(".mobile-nav");
 const headerTagline = document.querySelector(".showcase-header__tagline");
 const features = ["fullstack developer", "blogger", "coding enthusiast"];
+const scrollTop = document.querySelector(".scroll-top");
 
 // convert showcase filter buttons and columns to iterable array
 const showcaseMenuBtn = Array.prototype.slice.call(
@@ -54,6 +55,12 @@ for (var i = 0; i < showcaseMenuBtn.length; i++) {
     filterSelection(event.target.getAttribute("data-project-type"));
   });
 }
+
+// take user to top of page on scroll-top click
+scrollTop.addEventListener("click", function(event) {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
 
 // show all items by default
 filterSelection("all");
