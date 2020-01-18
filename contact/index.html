@@ -66,26 +66,36 @@
               details below.
             </p>
           </div>
-          <form class="contact-form">
+          <form
+            action="https://formspree.io/xyyedvgd"
+            method="POST"
+            class="contact-form"
+          >
             <input
               type="text"
               id="first-name"
               placeholder="First name"
               required
+              name="first-name"
             />
             <input
               type="text"
               id="last-name"
               placeholder="Last name"
               required
+              name="last-name"
             />
             <input
               type="email"
               id="email"
+              name="_replyto"
               placeholder="Email address"
               required
             />
-            <textarea placeholder="give us more details.."></textarea>
+            <textarea
+              name="details"
+              placeholder="give us more details.."
+            ></textarea>
             <div class="contact-button">
               <button type="submit">Connect</button>
             </div>
