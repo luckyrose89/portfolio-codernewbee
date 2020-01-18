@@ -24,3 +24,42 @@
   letter-spacing: 0;
   margin: 0;
 }
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.8rem;
+  padding-top: 4.5rem;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contact-form input,
+textarea {
+  border: none;
+  border-bottom: 2px solid #efefef;
+  height: 3.5rem;
+  color: #1f1f1f;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.contact-form input,
+textarea:focus {
+  outline: none;
+}
+
+.contact-form textarea {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 150px;
+}
+
+.contact-button {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
