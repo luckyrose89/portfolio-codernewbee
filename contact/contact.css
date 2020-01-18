@@ -104,3 +104,13 @@ textarea:focus,
     grid-row: 5/6;
   }
 }
+
+@media (max-width: 30rem) {
+  .contact-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .contact-header p {
+    font-size: 1rem;
+  }
+}
