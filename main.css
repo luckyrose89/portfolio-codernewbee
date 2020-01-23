@@ -139,17 +139,6 @@
 
 /* Media Queries */
 
-@media (max-width: 30rem) {
-  .showcase-header h1,
-  .cta__message h2 {
-    font-size: 1.6rem;
-  }
-
-  .showcase-header p {
-    font-size: 1rem;
-  }
-}
-
 @media (max-width: 40rem) {
   .showcase-filter__items {
     justify-content: center;
@@ -161,5 +150,16 @@
   }
   .showcase-gallery {
     padding: 0;
+  }
+}
+
+@media (max-width: 30rem) {
+  .showcase-header h1,
+  .cta__message h2 {
+    font-size: 1.6rem;
+  }
+
+  .showcase-header p {
+    font-size: 1rem;
   }
 }

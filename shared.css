@@ -120,6 +120,10 @@ a {
   background: #ddd;
 }
 
+.main-nav__toggle:focus {
+  outline: none;
+}
+
 .mobile-nav {
   display: none;
   border-bottom: 1px solid #efefef;
@@ -256,18 +260,5 @@ footer {
 @media (max-width: 1100px) {
   body {
     padding: 0;
-  }
-}
-
-@media (max-width: 30rem) {
-  .showcase-header h1,
-  .cta__message h2,
-  .contact-header h1 {
-    font-size: 1.6rem;
-  }
-
-  .showcase-header p,
-  .contact-header p {
-    font-size: 1rem;
   }
 }
