@@ -1,4 +1,4 @@
-const headerTagline = document.querySelector(".showcase-header__tagline");
+const headerTagline = document.querySelector(".showcase-header__feature");
 const features = ["fullstack developer", "blogger", "coding enthusiast"];
 var index = 0;
 
@@ -54,4 +54,4 @@ filterSelection("all");
 
 // display header tagline
 showFeature();
-setInterval(showFeature, 3000);
+setInterval(showFeature, 2000);

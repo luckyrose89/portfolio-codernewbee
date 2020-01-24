@@ -15,23 +15,6 @@
   padding: 0 0.9rem;
 }
 
-.showcase-header h1 {
-  font-size: 3.2rem;
-  font-weight: 300;
-  line-height: 1.2;
-  color: #1f1f1f;
-  text-transform: capitalize;
-  letter-spacing: -0.5;
-}
-
-.showcase-header p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: 0;
-  margin: 0;
-}
-
 .showcase-filter {
   margin-top: 5.5rem;
   padding-bottom: 1.25rem;
@@ -154,12 +137,7 @@
 }
 
 @media (max-width: 30rem) {
-  .showcase-header h1,
   .cta__message h2 {
     font-size: 1.6rem;
-  }
-
-  .showcase-header p {
-    font-size: 1rem;
   }
 }

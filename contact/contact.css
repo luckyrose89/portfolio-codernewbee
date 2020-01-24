@@ -8,23 +8,6 @@
   text-align: center;
 }
 
-.contact-header h1 {
-  font-size: 3.2rem;
-  font-weight: 300;
-  line-height: 1.2;
-  color: #1f1f1f;
-  text-transform: capitalize;
-  letter-spacing: -0.5;
-}
-
-.contact-header p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: 0;
-  margin: 0;
-}
-
 .contact-form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -74,6 +57,12 @@ textarea:focus,
   padding: 0.6rem 1.9rem;
 }
 
+.contact-button button:hover {
+  background: #bdb099;
+  cursor: pointer;
+  border: 2px solid #bdb099;
+}
+
 /* Media queries*/
 
 @media (max-width: 40rem) {
@@ -102,15 +91,5 @@ textarea:focus,
 
   .contact-button {
     grid-row: 5/6;
-  }
-}
-
-@media (max-width: 30rem) {
-  .contact-header h1 {
-    font-size: 1.6rem;
-  }
-
-  .contact-header p {
-    font-size: 1rem;
   }
 }
