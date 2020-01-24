@@ -99,7 +99,10 @@ a {
 .social:hover {
   border: none;
   background: #bdb099;
-  color: #ffffff;
+}
+
+.social a:hover {
+  color: #fff;
 }
 
 .main-nav__toggle {
