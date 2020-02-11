@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+i {
+  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
+  font-weight: 900;
+}
 .container {
   padding-left: 0.9rem;
   padding-right: 0.9rem;
