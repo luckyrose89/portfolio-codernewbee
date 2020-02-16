@@ -1,8 +1,11 @@
-let url =
+const url =
   "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fcodernewbee-blog.netlify.com%2Frss.xml&api_key=cewflxnhxawfvh5qgyh98ltpzrvhfnugmeifd57h";
 
-let twitterUrl =
+const twitterUrl =
   "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Frss.app%2Ffeeds%2FQcPOZnueFlV97i7f.xml&api_key=cewflxnhxawfvh5qgyh98ltpzrvhfnugmeifd57h";
+
+const blogList = document.querySelector(".blog-widget");
+const tweetList = document.querySelector(".twitter-widget");
 
 fetch(url)
   .then(function(response) {
@@ -15,8 +18,27 @@ fetch(url)
 
     // Examine the text in the response
     response.json().then(function(data) {
-      console.log(data);
-      return data;
+      for (var i = 0; i < 3; i++) {
+        var listItem = document.createElement("li");
+        var html =
+          '<a href="' +
+          data.items[i].link +
+          '">' +
+          "<h4>" +
+          data.items[i].title +
+          "</h4>" +
+          "<p>" +
+          data.items[i].description +
+          "<p>" +
+          "<p>" +
+          data.items[i].pubDate +
+          "<p>" +
+          "</a>";
+
+        listItem.innerHTML = html;
+        listItem.classList.add("blog-Item");
+        blogList.appendChild(listItem);
+      }
     });
   })
   .catch(function(err) {
@@ -34,8 +56,24 @@ fetch(twitterUrl)
 
     // Examine the text in the response
     response.json().then(function(data) {
-      console.log(data);
-      return data;
+      for (var i = 0; i < 2; i++) {
+        var listItem = document.createElement("li");
+        var html =
+          '<a href="' +
+          data.items[i].link +
+          '">' +
+          "<p>" +
+          data.items[i].title +
+          "</p>" +
+          "<p>" +
+          data.items[i].pubDate +
+          "<p>" +
+          "</a>";
+
+        listItem.innerHTML = html;
+        listItem.classList.add("tweet-Item");
+        tweetList.appendChild(listItem);
+      }
     });
   })
   .catch(function(err) {
