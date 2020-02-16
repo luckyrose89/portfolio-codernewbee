@@ -22,10 +22,12 @@ a {
   text-decoration: none;
 }
 
-i {
-  font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
-  font-weight: 900;
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
+
 .container {
   padding-left: 0.9rem;
   padding-right: 0.9rem;
@@ -81,9 +83,6 @@ i {
 
 .main-nav__items,
 .footer-nav__items {
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
 }
 
@@ -236,6 +235,10 @@ footer {
   cursor: pointer;
 }
 
+.rssdog {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.1rem;
+}
 /* Media Queries*/
 
 @media (min-width: 740px) {
