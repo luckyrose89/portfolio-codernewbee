@@ -1,12 +1,15 @@
+// Assign feed api endpoints variables
 const url =
   "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fcodernewbee-blog.netlify.com%2Frss.xml&api_key=cewflxnhxawfvh5qgyh98ltpzrvhfnugmeifd57h";
 
 const twitterUrl =
   "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Frss.app%2Ffeeds%2FQcPOZnueFlV97i7f.xml&api_key=cewflxnhxawfvh5qgyh98ltpzrvhfnugmeifd57h";
 
+// Select and assign target <ul> elements to variables
 const blogList = document.querySelector(".blog-widget");
 const tweetList = document.querySelector(".twitter-widget");
 
+// Fetch API data for blog feed
 fetch(url)
   .then(function(response) {
     if (response.status !== 200) {
@@ -16,7 +19,7 @@ fetch(url)
       return;
     }
 
-    // Examine the text in the response
+    // Examine response and create html for <li> output
     response.json().then(function(data) {
       for (var i = 0; i < 3; i++) {
         var listItem = document.createElement("li");
@@ -45,6 +48,7 @@ fetch(url)
     console.log("Fetch Error :-S", err);
   });
 
+// Fetch API data for twitter feed
 fetch(twitterUrl)
   .then(function(response) {
     if (response.status !== 200) {
@@ -54,7 +58,7 @@ fetch(twitterUrl)
       return;
     }
 
-    // Examine the text in the response
+    // Examine response and create html for <li> output
     response.json().then(function(data) {
       for (var i = 0; i < 2; i++) {
         var listItem = document.createElement("li");

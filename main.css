@@ -116,7 +116,6 @@
 .cta__button {
   background: #1f1f1f;
   border: none;
-  color: #ffffff;
   padding: 0.6rem 1.8rem;
   font-size: 1rem;
 }
@@ -124,6 +123,10 @@
 .cta__button:hover {
   background: #bdb099;
   cursor: pointer;
+}
+
+.cta__link {
+  color: #ffffff;
 }
 
 /* Media Queries */
