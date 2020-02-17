@@ -9,6 +9,33 @@ const twitterUrl =
 const blogList = document.querySelector(".blog-widget");
 const tweetList = document.querySelector(".twitter-widget");
 
+var formatDate = function(date) {
+  var d = new Date(date);
+  var months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+
+  var month = months[d.getMonth() + 1];
+  var day = "" + d.getDate();
+  var year = d.getFullYear();
+
+  if (day.length < 2) {
+    day = "0" + day;
+  }
+  return day + ", " + month + " " + year;
+};
+
 // Fetch API data for blog feed
 fetch(url)
   .then(function(response) {
@@ -34,10 +61,9 @@ fetch(url)
           data.items[i].description +
           "<p>" +
           "<p>" +
-          data.items[i].pubDate +
+          formatDate(data.items[i].pubDate) +
           "<p>" +
           "</a>";
-
         listItem.innerHTML = html;
         listItem.classList.add("blog-Item");
         blogList.appendChild(listItem);
@@ -70,7 +96,7 @@ fetch(twitterUrl)
           data.items[i].title +
           "</p>" +
           "<p>" +
-          data.items[i].pubDate +
+          formatDate(data.items[i].pubDate) +
           "<p>" +
           "</a>";
 
