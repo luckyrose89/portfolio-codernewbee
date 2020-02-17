@@ -199,6 +199,17 @@ footer {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.widget-body {
+  margin-top: 0.6rem;
+}
+
+.blog-Item,
+.tweet-Item {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
 .copyrights {
   background: #1d1d1d;
   padding: 3rem 0;
