@@ -7,12 +7,16 @@
 
 .showcase-header {
   max-width: 700px;
+  transition: height 500ms ease-out;
 }
 
 .showcase-header,
 .showcase-filter {
   width: 100%;
   padding: 0 0.9rem;
+}
+.showcase-header__feature > .txt {
+  border-right: 0.05rem solid #777777;
 }
 
 .showcase-filter {
