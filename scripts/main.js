@@ -1,15 +1,17 @@
 const headerTagline = document.querySelector(".showcase-header__feature");
 const features = ["developer", "blogger", "code geek"];
 const waitTime = headerTagline.getAttribute("data-wait");
-
-// convert showcase filter buttons and columns to iterable array
-const showcaseMenuBtn = Array.prototype.slice.call(
+const containerElem = document.querySelector(".showcase-gallery");
+const list = Array.prototype.slice.call(
   document.querySelectorAll(".showcase-filter__item")
 );
 
-const showcaseColumn = Array.prototype.slice.call(
-  document.querySelectorAll(".showcase-column")
-);
+// Initialize mixitup and pass showcase gallery container to it
+mixitup(containerElem, {
+  animation: {
+    animateResizeTargets: true
+  }
+});
 
 // Create class for typewriter effect in header tagline
 const TypeWriter = function(textElem, words, wait = 3000) {
@@ -61,37 +63,6 @@ TypeWriter.prototype.type = function() {
 
   setTimeout(() => this.type(), typespeed);
 };
-
-// Filter Image gallery and show selected items
-function filterSelection(name) {
-  if (name === "all") {
-    showcaseColumn.forEach(function(column) {
-      column.classList.add("showcase-show");
-    });
-  } else {
-    for (var i = 0; i < showcaseColumn.length; i++) {
-      if (showcaseColumn[i].classList.contains(name)) {
-        showcaseColumn[i].classList.add("showcase-show");
-      } else {
-        showcaseColumn[i].classList.remove("showcase-show");
-      }
-    }
-  }
-}
-
-// Highlight menu buttons on click
-for (var i = 0; i < showcaseMenuBtn.length; i++) {
-  showcaseMenuBtn[i].addEventListener("click", function(event) {
-    showcaseMenuBtn.forEach(function(button) {
-      button.classList.remove("active-link");
-    });
-    event.target.classList.add("active-link");
-    filterSelection(event.target.getAttribute("data-project-type"));
-  });
-}
-
-// show all items by default
-filterSelection("all");
 
 // Initialize Typewriter instance
 new TypeWriter(headerTagline, features, waitTime);

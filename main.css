@@ -25,12 +25,10 @@
 }
 
 .showcase-filter__items {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   margin-bottom: 0.8rem;
   width: 100%;
+  color: #1f1f1f;
 }
 
 .showcase-filter__item {
@@ -42,6 +40,8 @@
 
 .showcase-filter__item:hover {
   cursor: pointer;
+  background: #1f1f1f;
+  color: #ffffff;
 }
 
 .showcase-gallery {
@@ -56,6 +56,11 @@
   height: 100%;
   display: block;
   object-fit: cover;
+}
+
+.showcase-column {
+  position: relative;
+  border: 2px solid #eee;
 }
 
 .showcase-overlay {
@@ -76,16 +81,6 @@
   text-decoration: underline;
 }
 
-.active-link {
-  background: #1f1f1f;
-  color: #ffffff;
-}
-
-.showcase-column {
-  display: none;
-  position: relative;
-}
-
 .showcase-column:hover .showcase-overlay {
   opacity: 1;
 }
@@ -98,10 +93,6 @@
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
-}
-
-.showcase-show {
-  display: block;
 }
 
 .cta__message {
