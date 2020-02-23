@@ -64,5 +64,16 @@ TypeWriter.prototype.type = function() {
   setTimeout(() => this.type(), typespeed);
 };
 
+// Iterate through filter menu buttons & add class active onclick
+for (let i = 0; i < list.length; i++) {
+  list[i].addEventListener("click", function(event) {
+    list.forEach(item => {
+      item.classList.remove("active");
+    });
+
+    event.target.classList.add("active");
+  });
+}
+
 // Initialize Typewriter instance
 new TypeWriter(headerTagline, features, waitTime);
