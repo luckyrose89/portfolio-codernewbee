@@ -4,7 +4,7 @@ const mobileNav = document.querySelector(".mobile-nav");
 
 // display mobile nav
 toggleButton.addEventListener("click", function(event) {
-  mobileNav.classList.toggle("active");
+  mobileNav.classList.toggle("mobile-nav-show");
 });
 
 // take user to top of page on scroll-top click
