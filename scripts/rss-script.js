@@ -26,7 +26,7 @@ var formatDate = function(date) {
     "December"
   ];
 
-  var month = months[d.getMonth() + 1];
+  var month = months[d.getMonth()];
   var day = "" + d.getDate();
   var year = d.getFullYear();
 
